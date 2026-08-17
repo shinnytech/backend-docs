@@ -66,8 +66,8 @@
     front-mobile                   front-mobile-backtest
        |                              |
        +--> ins-serve                 +--> ins-serve-backtest
-       +--> mdreal                    +--> mdreal  (共用)
-       +--> mdhis                     +--> mdhis   (共用)
+       +--> mdreal                    +--> mdreal
+       +--> mdhis                     +--> mdhis
 ```
 
 `ins-serve-backtest` 仅通过 `front-mobile-backtest` 对外提供服务，不提供独立入口。
@@ -76,16 +76,16 @@
 
 各服务提供以下 WebSocket 入口：
 
-| 服务 | 用户或入口类型 | 地址 |
+| 服务 | 地址 | 备注 |
 | --- | --- | --- |
-| `front-mobile` | 付费用户 | `wss://api.shinnytech.com/t/nfmd/front/mobile` |
-| `front-mobile` | 免费用户 | `wss://free-api.shinnytech.com/t/nfmd/front/mobile` |
-| `front-mobile-backtest` | 回测用户 | `wss://backtest.shinnytech.com/t/nfmd/front/mobile` |
-| `mdhis` | 独立入口 | `wss://mdhis.shinnytech.com/mdhis` |
-| `mdreal` | 独立入口 | `wss://mdreal.shinnytech.com/mdreal` |
-| `ins-serve` | 独立入口 | `wss://ins-serve.shinnytech.com/ins-serve` |
-| `combo-real` | 独立入口 | `wss://combo-real.shinnytech.com/combo-real` |
-| `combo-chart` | 独立入口 | `wss://combo-chart.shinnytech.com/combo-chart` |
+| `front-mobile` | `wss://api.shinnytech.com/t/nfmd/front/mobile` | 付费用户入口 |
+| `front-mobile` | `wss://free-api.shinnytech.com/t/nfmd/front/mobile` | 免费用户入口 |
+| `front-mobile-backtest` | `wss://backtest.shinnytech.com/t/nfmd/front/mobile` | 回测用户入口 |
+| `mdhis` | `wss://mdhis.shinnytech.com/mdhis` | 独立入口 |
+| `mdreal` | `wss://mdreal.shinnytech.com/mdreal` | 独立入口 |
+| `ins-serve` | `wss://ins-serve.shinnytech.com/ins-serve` | 独立入口 |
+| `combo-real` | `wss://combo-real.shinnytech.com/combo-real` | 独立入口 |
+| `combo-chart` | `wss://combo-chart.shinnytech.com/combo-chart` | 独立入口 |
 
 ### MD 系统（期货系统）
 
