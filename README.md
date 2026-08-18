@@ -12,4 +12,4 @@
 
 阅读 [service_limit.md](./service_limit.md) 了解后台服务报文约束规则
 
-阅读 [rate_limit.md](./rate_limit.md) 了解后台服务流量控制规则
+阅读 [服务端流控规则及应对方案](https://shinnytech.atlassian.net/wiki/spaces/BACK/pages/2638381057) 了解后台服务流量控制规则及正确的应对策略
