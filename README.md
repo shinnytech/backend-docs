@@ -8,6 +8,8 @@
 
 - 阅读 [微服务行情系统接入](./microsrv_startup.md) 对接微服务行情系统接口。
 
+- 推荐使用 RTQ-SDK 管理行情连接，参考 [RTQ SDK 用户指南](./rtq-sdk.md)。
+
 - 参考 [客户端标识规范](https://shinnytech.atlassian.net/wiki/spaces/BACK/pages/2519007236) 的要求规范化客户端标识信息。
 
 ## Step 3
